@@ -1,0 +1,71 @@
+
+.margin {
+    margin: 40px 0;
+}
+
+.box {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 100px;
+    box-shadow:  0 10px 0 0 black;
+}
+
+.animation {
+    animation: animation 2s infinite;
+}
+
+.grad {
+    background: linear-gradient(90deg, green, white);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.pos {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    color: white;
+    background-color: green;
+}
+
+.pos div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 24px;
+    font-weight: 700;
+    column-gap: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+}
+
+.grid div {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+@keyframes animation {
+    0% {
+        background-color: aqua;
+        transform: translate(0);
+
+    }
+
+    50%{
+        transform: translate(100px)
+    }
+
+    100%{
+        background-color: blue;
+        transform: translate(0);
+    }
+}
